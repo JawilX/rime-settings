@@ -1,6 +1,6 @@
 patch:
   schema_list:
-    - schema: double_pinyin_flypy # 小鹤双拼
+    # - schema: double_pinyin_flypy # 小鹤双拼
     - schema: luna_pinyin # 全拼
     # - schema: double_pinyin # 自然码
   switcher/hotkeys:
@@ -11,7 +11,7 @@ patch:
     - simplification
     - zh_hans
     - emoji_suggestion
-  menu/page_size: 8
+  menu/page_size: 9
   ascii_composer: # 设置caps、shift、control等键的作用
     good_old_caps_lock: true # 若为true，caps只切换大小写
     switch_key:
@@ -25,8 +25,8 @@ patch:
     # - { when: composing, accept: Tab, send: Page_Up } # Tab 翻页
     - { when: composing, accept: Tab, send: Right } # Tab 移动光标向右
     - { when: composing, accept: Shift+Tab, send: Page_Up }
-    - { when: paging, accept: minus, send: Page_Up }
-    - { when: has_menu, accept: equal, send: Page_Down }
+    # - { when: paging, accept: minus, send: Page_Up }
+    # - { when: has_menu, accept: equal, send: Page_Down }
     - { when: paging, accept: bracketleft, send: Page_Up }
     - { when: has_menu, accept: bracketright, send: Page_Down }
     # - {accept: "Control+p", send: Up, when: composing}
@@ -42,8 +42,11 @@ patch:
     # - {accept: "Control+bracketleft", send: Escape, when: composing}
     # - { when: has_menu, accept: semicolon, send: 2 }
     # - { when: has_menu, accept: apostrophe, send: 3 }
-    # - {accept: comma, send: Page_Up, when: paging}
-    # - {accept: period, send: Page_Down, when: has_menu}
+    - { accept: comma, send: Page_Up, when: paging }
+    - { accept: period, send: Page_Down, when: has_menu }
+    - { accept: KP_Enter, send: Return, when: composing }
+    # - { accept: minus, send: Return, when: always }
+    # - { accept: "Shift+underscore", send: Return, when: always }
     # - {accept: "Control+Shift+1", select: .next, when: always}
     # - {accept: "Control+Shift+2", toggle: ascii_mode, when: always}
     # - {accept: "Control+Shift+3", toggle: full_shape, when: always}

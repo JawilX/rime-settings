@@ -59,7 +59,6 @@ iPod	ipod
 IPTV	iptv
 IPv4	ipv
 IPv6	ipv
-Mac App Store	mas
 OS X	osx
 GNU/Linux	linux
 X-Ray	xray
@@ -68,7 +67,6 @@ Youku	youku
 YouTube	youtube
 又双叒叕	yzyz
 iCloud	icloud
-Quantumult	quan
 Dropbox	dropbox
 T恤	txu
 Mac	mac

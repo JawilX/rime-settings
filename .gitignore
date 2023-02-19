@@ -1,8 +1,12 @@
 *~
 .*~
 /luna_pinyin.userdb/*
+/luna_pinyin.userdb.old/*
 /build/*
 /user.yaml
 /installation.yaml
 opencc/.DS_Store
 .DS_Store
+.idea
+sync
+trash
